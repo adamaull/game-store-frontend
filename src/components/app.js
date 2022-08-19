@@ -7,7 +7,7 @@ export default function App() {
   const [allGames, setAllGames] = useState([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/game/get")
+    fetch("https://gaming-app-backend.herokuapp.com/game/get")
       .then((res) => res.json())
       .then((res) => setAllGames(res))
       .catch((error) =>
@@ -31,7 +31,7 @@ export default function App() {
   return (
     <div className="app">
       <div className="header-wrapper">Game Pause Shopping Cart Login Icon</div>
-      <Carousel
+      <Carousel className="carousel"
         infiniteLoop
         useKeyboardArrows
         autoPlay={false}
