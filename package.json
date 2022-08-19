@@ -60,6 +60,7 @@
     "react-carousel-responsive": "^0.0.31",
     "react-dom": "16.13.1",
     "react-flippy": "^1.1.0",
+    "react-icons": "^4.4.0",
     "react-redux": "7.2.0",
     "react-responsive-carousel": "^3.2.23",
     "react-router": "5.1.2",
