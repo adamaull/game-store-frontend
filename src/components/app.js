@@ -21,18 +21,6 @@ export default function App() {
       );
   }, []);
 
-  // Current function to be built
-  // Call the console used and have the games with correlating consoles render
-  //   const consoleChoice = ({console_used}) => {
-  //     if(console_used === "PC" && "Nintendo Switch" && "Playstation" && "Xbox"){
-  //       allConsole === console_used;
-  //     }
-
-  //     if(allConsole === "Pc"){
-
-  //     }
-  //  }
-
   const renderAllGames = () => {
     return allGames.map((gameList) => {
       return (
@@ -77,12 +65,6 @@ export default function App() {
           <div className="xbox">Xbox {filterGames("Xbox")}</div>
           <div className="switch">Nintendo Switch {filterGames("Nintendo Switch")}</div>
         </div>
-          {/* <div className="game-wrapper">
-            <div>{filterGames("Playstation")}</div> 
-            <div>{filterGames("PC")}</div> 
-            <div>{filterGames("Xbox")}</div>
-            <div>{filterGames("Nintendo Switch")}</div> }
-         </div> */}
       </div>
     </div>
   );
