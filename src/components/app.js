@@ -46,7 +46,7 @@ export default function App() {
   const filterGames = (type) => {
     return allGames
       .filter((game) => game.console_used === type)
-      .map((game) => <div>{game.title}</div>);
+      .map((game) => <img src={game.image_url}></img>);
   };
 
   return (
@@ -72,17 +72,17 @@ export default function App() {
       <div className="console-wrapper">
         <div className="console-header">Consoles</div>
         <div className="console-name-wrapper">
-          <div className="ps">Playstation Five</div>
-          <div className="pc">Pc</div>
-          <div className="xbox">Xbox</div>
-          <div className="switch">Nintendo Switch</div>
+          <div className="ps">Playstation {filterGames("Playstation")}</div>
+          <div className="pc">Pc {filterGames("PC")}</div>
+          <div className="xbox">Xbox {filterGames("Xbox")}</div>
+          <div className="switch">Nintendo Switch {filterGames("Nintendo Switch")}</div>
         </div>
-        <div className="game-wrapper">
-          <div>{filterGames("Playstation")}</div>
-          <div>{filterGames("PC")}</div>
-          <div>{filterGames("Xbox")}</div>
-          <div>{filterGames("Nintendo Switch")}</div>
-        </div>
+          {/* <div className="game-wrapper">
+            <div>{filterGames("Playstation")}</div> 
+            <div>{filterGames("PC")}</div> 
+            <div>{filterGames("Xbox")}</div>
+            <div>{filterGames("Nintendo Switch")}</div> }
+         </div> */}
       </div>
     </div>
   );

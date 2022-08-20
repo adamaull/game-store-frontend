@@ -1,19 +1,47 @@
-.console-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px 0px 30px 0px;
-  font-size: 3em;
+.console-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px 30px 0px;
+    font-size: 3em;
 }
 
 .console-name-wrapper {
-  display: flex;
-  justify-content: space-around;
-  font-size: 2em;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2em;
 }
 
 .game-wrapper {
   display: flex;
   justify-content: space-around;
   font-size: 1em;
+  
+}
+
+img {
+  width: 250px;
+  height: 300px;
+}
+
+.ps, .pc, .xbox, .switch {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.ps {
+  color: blue;
+}
+
+.pc {
+  color: gray;
+}
+
+.xbox {
+  color: green;
+}
+
+.switch{
+  color: red;
 }
